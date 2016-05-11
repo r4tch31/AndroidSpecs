@@ -12,6 +12,10 @@ namespace AndroidSpecs
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Texture2D logo;
+
+        SpriteFont font;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -45,7 +49,9 @@ namespace AndroidSpecs
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            logo = Content.Load<Texture2D>("imgs/VirtexEdgeLogo128");
+
+            font = Content.Load<SpriteFont>("fnts/font");
         }
 
         /// <summary>
@@ -71,6 +77,8 @@ namespace AndroidSpecs
 
             base.Update(gameTime);
         }
+        string info;
+        int y = 0;
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -79,8 +87,25 @@ namespace AndroidSpecs
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+            y = 0;
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(logo, new Vector2(0, 0), Color.White);
+
+            spriteBatch.DrawString(font, "Properties", new Vector2(128, y), Color.Black);
+            y += 25;
+
+            spriteBatch.DrawString(font, "=====================", new Vector2(128, y), Color.Black);
+            y += 25;
+
+            spriteBatch.DrawString(font, string.Format("Resoultion:    {0}x{1}", graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height), new Vector2(128, y), Color.Black);
+            y += 25;
+                        
+            spriteBatch.DrawString(font, string.Format("Refresh Rate: {0}", graphics.GraphicsDevice.Adapter.CurrentDisplayMode.RefreshRate), new Vector2(128, y), Color.Black);
+            y += 25;
+
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

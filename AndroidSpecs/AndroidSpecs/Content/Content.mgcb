@@ -1,7 +1,7 @@
 
 #----------------------------- Global Properties ----------------------------#
 
-/outputDir:bin/Android
+/outputDir:..\Assets\Content
 /intermediateDir:obj/Android
 /platform:Android
 /config:
@@ -12,4 +12,21 @@
 
 
 #---------------------------------- Content ---------------------------------#
+
+#begin fnts/font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:fnts/font.spritefont
+
+#begin imgs/VirtexEdgeLogo128.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:TextureFormat=Color
+/build:imgs/VirtexEdgeLogo128.png
 
