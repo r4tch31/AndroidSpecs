@@ -1,32 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
-namespace AndroidSpecs
+namespace WindowsGameTest
 {
     /// <summary>
-    /// This is the main type for your game.
+    /// This is the main type for your game
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        Texture2D logo;
-
-        SpriteFont font;
-
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-
-#if ANDROID
-            graphics.IsFullScreen = true;
-#endif
-            graphics.PreferredBackBufferWidth = 800;
-            graphics.PreferredBackBufferHeight = 480;
-            graphics.SupportedOrientations = DisplayOrientation.LandscapeLeft | DisplayOrientation.LandscapeRight;
         }
 
         /// <summary>
@@ -49,16 +45,14 @@ namespace AndroidSpecs
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-        spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            logo = Content.Load<Texture2D>("imgs/VirtexEdgeLogo128");
-
-            font = Content.Load<SpriteFont>("fnts/font");
+            // TODO: use this.Content to load your game content here
         }
 
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
+        /// all content.
         /// </summary>
         protected override void UnloadContent()
         {
@@ -72,15 +66,14 @@ namespace AndroidSpecs
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+            // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                Exit();
+                this.Exit();
 
             // TODO: Add your update logic here
 
             base.Update(gameTime);
         }
-        string info;
-        int y = 0;
 
         /// <summary>
         /// This is called when the game should draw itself.
@@ -89,29 +82,8 @@ namespace AndroidSpecs
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            y = 0;
 
-            spriteBatch.Begin();
-
-            spriteBatch.Draw(logo, new Vector2(0, 0), Color.White);
-
-            spriteBatch.DrawString(font, "Properties", new Vector2(128, y), Color.Black);
-            y += 25;
-
-            spriteBatch.DrawString(font, "=====================", new Vector2(128, y), Color.Black);
-            y += 25;
-
-            spriteBatch.DrawString(font, string.Format("Resoultion:    {0}x{1}", graphics.GraphicsDevice.Viewport.Width, graphics.GraphicsDevice.Viewport.Height), new Vector2(128, y), Color.Black);
-            y += 25;
-
-#if ANDROID
-            spriteBatch.DrawString(font, string.Format("Refresh Rate: {0}", graphics.GraphicsDevice.Adapter.CurrentDisplayMode.RefreshRate), new Vector2(128, y), Color.Black);
-            y += 25;
-#else
-            spriteBatch.DrawString(font, string.Format("Device Name:  {0}", graphics.GraphicsDevice.Adapter.DeviceName), new Vector2(128, y), Color.Black);
-            y += 25;
-#endif
-            spriteBatch.End();
+            // TODO: Add your drawing code here
 
             base.Draw(gameTime);
         }

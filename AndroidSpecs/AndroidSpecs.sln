@@ -5,18 +5,40 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidSpecs", "AndroidSpecs\AndroidSpecs.csproj", "{C86746C4-1F05-422B-9B0D-A8582B720D1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGameTest", "AndroidSpecs\WindowsGameTest.csproj", "{F49EA501-D896-442A-BB3E-906901A7251A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGameTestContent", "AndroidSpecs\Content\WindowsGameTestContent.contentproj", "{9915F8DC-C66F-4984-9619-2EA10C8B919D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Debug|x86.Build.0 = Debug|Any CPU
+		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Debug|x86.Deploy.0 = Debug|Any CPU
 		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Release|x86.ActiveCfg = Release|Any CPU
+		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Release|x86.Build.0 = Release|Any CPU
+		{C86746C4-1F05-422B-9B0D-A8582B720D1F}.Release|x86.Deploy.0 = Release|Any CPU
+		{F49EA501-D896-442A-BB3E-906901A7251A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F49EA501-D896-442A-BB3E-906901A7251A}.Debug|x86.ActiveCfg = Debug|x86
+		{F49EA501-D896-442A-BB3E-906901A7251A}.Debug|x86.Build.0 = Debug|x86
+		{F49EA501-D896-442A-BB3E-906901A7251A}.Release|Any CPU.ActiveCfg = Release|x86
+		{F49EA501-D896-442A-BB3E-906901A7251A}.Release|x86.ActiveCfg = Release|x86
+		{F49EA501-D896-442A-BB3E-906901A7251A}.Release|x86.Build.0 = Release|x86
+		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Debug|x86.ActiveCfg = Debug|x86
+		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Release|Any CPU.ActiveCfg = Release|x86
+		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
