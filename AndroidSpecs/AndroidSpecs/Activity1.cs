@@ -5,7 +5,7 @@ using Android.Views;
 
 namespace AndroidSpecs
 {
-    [Activity(Label = "AndroidSpecs"
+    [Activity(Label = "Virtex Android Test Bed"
         , MainLauncher = true
         , Icon = "@drawable/icon"
         , Theme = "@style/Theme.Splash"

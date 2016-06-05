@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGameTest", "AndroidS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsGameTestContent", "AndroidSpecs\Content\WindowsGameTestContent.contentproj", "{9915F8DC-C66F-4984-9619-2EA10C8B919D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroidClass", "DroidClass\DroidClass.csproj", "{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,14 @@ Global
 		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Debug|x86.ActiveCfg = Debug|x86
 		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Release|Any CPU.ActiveCfg = Release|x86
 		{9915F8DC-C66F-4984-9619-2EA10C8B919D}.Release|x86.ActiveCfg = Release|x86
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Debug|x86.Build.0 = Debug|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Release|x86.ActiveCfg = Release|Any CPU
+		{99AF9D79-BFC3-40B5-A359-2FEF0F47FBBE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

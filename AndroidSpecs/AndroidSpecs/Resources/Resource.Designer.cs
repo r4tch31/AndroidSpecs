@@ -26,6 +26,8 @@ namespace AndroidSpecs
 		
 		public static void UpdateIdValues()
 		{
+			global::DroidClass.Resource.String.ApplicationName = global::AndroidSpecs.Resource.String.ApplicationName;
+			global::DroidClass.Resource.String.Hello = global::AndroidSpecs.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
